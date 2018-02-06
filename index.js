@@ -25,14 +25,17 @@ function viewCart() {
   } else if (clength === 1) {
     view += `${Object.keys(cart[0])[0]} at $${Object.values(cart[0])[0]}.`;
   } else if (clength === 2) {
-    view += `${Object.keys(cart[0])[0]} at $${Object.values(cart[0])[0]} and ${Object.keys(cart[1])[0]} at $${Object.values(cart[1])[0]}`; 
+    view += `${Object.keys(cart[0])[0]} at $${Object.values(cart[0])[0]} and ${Object.keys(cart[1])[0]} at $${Object.values(cart[1])[0]}.`; 
   } else {
       for (var i = 0; i < clength; i++) {
         index = cart[i]
         item = Object.keys(index)[0];
         price = Object.values(index)[0];
+        
         if (i === clength - 1) {
-          view += `and 
+          view += `and ${item} at $${price}.`;
+        } else {
+          view += 
         }
       }
   }
