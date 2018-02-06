@@ -28,8 +28,9 @@ function viewCart() {
     view += `${Object.keys(cart[0])[0]} at $${Object.values(cart[0])[0]} and ${Object.keys(cart[1])[0]} at $${Object.values(cart[1])[0]}`; 
   } else {
       for (var i = 0; i < clength; i++) {
-        item = Object.keys(cart[i])[0];
-        price = Object.values(cart[i])[0];
+        index = cart[i]
+        item = Object.keys(index)[0];
+        price = Object.values(index)[0];
         if (i === clength - 1) {
           view += `and 
         }
