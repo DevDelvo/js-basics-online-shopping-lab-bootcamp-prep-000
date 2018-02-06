@@ -42,6 +42,7 @@ function viewCart() {
   return view;
 }
 
+
 function total() {
   // write your code here
 }
