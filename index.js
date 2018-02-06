@@ -61,9 +61,12 @@ function removeFromCart(name) {
     item = Object.keys(index)[0];
     
     if (index.hasOwnProperty(name)) {
-      cart = cart.slice(0, i).concat(cart.slice(i+1)) 
+      cart = cart.slice(0, i).concat(cart.slice(i+1));
+      return cart;
     }
   }
+  console.log("That item is not in your cart.");
+  return cart;
 }
 
 function placeOrder(cardNumber) {
