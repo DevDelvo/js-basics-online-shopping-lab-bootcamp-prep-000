@@ -39,7 +39,7 @@ function viewCart() {
         }
       }
   }
-  return view;
+  console.log(view);
 }
 
 
