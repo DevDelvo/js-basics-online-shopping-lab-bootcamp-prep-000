@@ -55,8 +55,8 @@ function total() {
  return sum;
 }
 
-function removeFromCart(item) {
-  // write your code here
+function removeFromCart(name) {
+  if ()
 }
 
 function placeOrder(cardNumber) {
