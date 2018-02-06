@@ -35,10 +35,11 @@ function viewCart() {
         if (i === clength - 1) {
           view += `and ${item} at $${price}.`;
         } else {
-          view += 
+          view += `${item} at $${price}, `;
         }
       }
   }
+  return view;
 }
 
 function total() {
