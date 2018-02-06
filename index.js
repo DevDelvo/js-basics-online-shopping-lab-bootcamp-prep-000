@@ -23,9 +23,9 @@ function viewCart() {
   if (clength === 0) {
     return "Your shopping cart is empty.";
   } else if (clength === 1) {
-    return `In your cart, you have ${Object.keys(cart[0])[0]} at $${Object.values(cart[0])[0]}.`
+    view += `${Object.keys(cart[0])[0]} at $${Object.values(cart[0])[0]}.`;
   } else if (clength === 2) {
-    return 
+    view += `${Object.keys`; 
   }
 }
 
