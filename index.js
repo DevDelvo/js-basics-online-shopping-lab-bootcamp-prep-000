@@ -17,10 +17,15 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  if (cart.length === 0) {
+  const clength = cart.length;
+  var view = "In your cart, you have ";
+  
+  if (clength === 0) {
     return "Your shopping cart is empty.";
-  } else if (cart.length === 1) {
+  } else if (clength === 1) {
     return `In your cart, you have ${Object.keys(cart[0])[0]} at $${Object.values(cart[0])[0]}.`
+  } else if (clength === 2) {
+    return 
   }
 }
 
