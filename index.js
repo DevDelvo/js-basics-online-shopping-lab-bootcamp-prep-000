@@ -25,7 +25,7 @@ function viewCart() {
   } else if (clength === 1) {
     view += `${Object.keys(cart[0])[0]} at $${Object.values(cart[0])[0]}.`;
   } else if (clength === 2) {
-    view += `${Object.keys`; 
+    view += `${Object.keys(cart[0])[0]} at $${Object.values(cart[0])[0]} and ${Object.keys(cart[1])[0]} at $${Object.values(cart[1])[0]}`; 
   }
 }
 
