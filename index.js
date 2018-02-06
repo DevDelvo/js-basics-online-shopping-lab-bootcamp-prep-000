@@ -61,7 +61,7 @@ function removeFromCart(name) {
     item = Object.keys(index)[0];
     
     if (index.hasOwnProperty(name)) {
-      delete 
+       
     }
   }
 }
