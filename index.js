@@ -20,7 +20,7 @@ function viewCart() {
   const clength = cart.length;
   var view = "In your cart, you have ";
   
-  if (clength === 0) {
+  if (!clength) {
     return "Your shopping cart is empty.";
   } else if (clength === 1) {
     view += `${Object.keys(cart[0])[0]} at $${Object.values(cart[0])[0]}.`;
